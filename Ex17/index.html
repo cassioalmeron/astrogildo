@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 16</title>
+
+	<style type="text/css">
+		h4{
+			text-align: center;
+			font-family: Arial;
+		}
+		p{
+			text-align: center;
+		}
+		input{
+			width: 30%;
+			height: 25px;
+		}
+
+		input:invalid {
+ 			 border: 2px solid red;
+		}
+		
+		button{
+			width: 30%;
+			height: 25px;
+			color: white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<h4>17)Usando o método GET, crie um formulário que receba três números e verifique qual deles é
+		o maior. Faça a validação dos campos de modo que usuário tenha que preencher todos os
+		campos.</h4>
+	<form action="exercicio17.php" method="GET" onsubmit="return formValidation()">
+		<p>
+			<input type="number" id="number1" name="grade1" placeholder="Número 1" required>
+			<br>
+			<input type="number" id="number2" name="grade2" placeholder="Número 2" required>
+			<br>
+			<input type="number" id="number3" name="grade3" placeholder="Número 3" required>
+		</p>
+		<p>
+			<button type="submit">Conferir Resultado</button>
+		</p>
+	</form>
+	
+</body>
+
+</html>
