@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercício 16</title>
+
+	<style type="text/css">
+		h4{
+			text-align: center;
+			font-family: Arial;
+		}
+		p{
+			text-align: center;
+		}
+		input{
+			width: 30%;
+			height: 25px;
+		}
+
+		input:invalid {
+ 			 border: 2px solid red;
+		}
+		
+		button{
+			width: 30%;
+			height: 25px;
+			color: white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<h4>16)Usando o método GET, crie um formulário que receba o nome do estudante, 3 notas
+		de Zero à Dez e calcule a média quando um botão de submit for pressionado! Faça a validação
+		dos campos de modo que usuário tenha que preencher todos os campos e todos numéricos.</h4>
+	<form action="backend.php" method="GET" onsubmit="return formValidation()">
+		<p>
+			<input type="text" name="name" placeholder="Nome do estudante" required>
+			<br>
+			<br>
+			
+			<input type="number" id="grade1" name="grade1" placeholder="Nota 1" required nume>
+			<br>
+			<input type="number" id="grade2" name="grade2" placeholder="Nota 2" required>
+			<br>
+			<input type="number" id="grade3" name="grade3" placeholder="Nota 3" required>
+		</p>
+		<p>
+			<button type="submit">Conferir Resultado</button>
+		</p>
+	</form>
+	
+</body>
+
+</html>
